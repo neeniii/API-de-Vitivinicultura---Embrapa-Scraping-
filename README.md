@@ -47,16 +47,14 @@ A API utiliza autenticação HTTP Basic.
 ### Pré-requisitos
 '''
 - Python 3.9+
-- Google Chrome instalado
-- [ChromeDriver](https://chromedriver.chromium.org/downloads) compatível ou `webdriver_manager` instalado.
 '''
 ### Instalação
 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git https://github.com/neeniii/API-de-Vitivinicultura---Embrapa-Scraping-
+cd API-de-Vitivinicultura---Embrapa-Scraping-
 
 2. Crie um ambiente virtual:
    ```bash
@@ -98,6 +96,7 @@ cd seu-repositorio
 - [Pandas](https://pandas.pydata.org/)
 - [lxml](https://lxml.de/)
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
+- [NumPy](https://numpy.org/)
 - [Requests](https://docs.python-requests.org/)
 - Autenticação via HTTP Basic
 '''
