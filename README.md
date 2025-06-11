@@ -115,7 +115,7 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 - Migração da autenticação para JWT.
 - Cache em memória para anos já consultados.
 - Pegar informações dos outros filtros que tem na aba importação e exportação, nessas abas, estou trazendo as informações do filtro Vinhos de mesa.
-
+'''
 ---
 
 ## 👨‍💻 Autor
