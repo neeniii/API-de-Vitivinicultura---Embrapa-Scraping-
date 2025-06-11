@@ -53,7 +53,7 @@ A API utiliza autenticação HTTP Basic.
 1. Clone o repositório:
 
 ```bash
-git https://github.com/neeniii/API-de-Vitivinicultura---Embrapa-Scraping-
+git clone https://github.com/neeniii/API-de-Vitivinicultura---Embrapa-Scraping-
 cd API-de-Vitivinicultura---Embrapa-Scraping-
 
 2. Crie um ambiente virtual:
