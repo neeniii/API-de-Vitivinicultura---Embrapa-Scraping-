@@ -1,5 +1,5 @@
 # Arquivos DLL compilados/otimizados em bytes
-
+__pycache__/
 *.py[bacalhau]
 *$py.class
 
@@ -157,7 +157,7 @@ cython_debug/
 # pode ser encontrado em https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 # e pode ser adicionado ao gitignore global ou mesclado neste arquivo. Para um ambiente mais nuclear
 # opção (não recomendada) você pode descomentar o seguinte para ignorar toda a pasta de ideias.
-#.ideia/
+.ideia/
 
 ### Patch do Python ###
 # Arquivo de configuração local do Poetry - https://python-poetry.org/docs/configuration/#local-configuration
@@ -168,5 +168,3 @@ poesia.toml
 
 # Arquivos de configuração LSP
 pyrightconfig.json
-.idea/
-__pycache__/
