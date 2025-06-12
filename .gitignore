@@ -1,5 +1,5 @@
 # Arquivos DLL compilados/otimizados em bytes
-__pycache__/
+
 *.py[bacalhau]
 *$py.class
 
@@ -168,3 +168,5 @@ poesia.toml
 
 # Arquivos de configuração LSP
 pyrightconfig.json
+.idea/
+__pycache__/
