@@ -14,7 +14,7 @@ URLS = {
 }
 
 # Caminho para os CSVs locais
-CAMINHO_CSV = r"C:\Tech Challange\csv"
+CAMINHO_CSV = os.path.join(os.path.dirname(__file__), "csv")
 
 def scraping(tipo: str, ano_inicio=1970, ano_fim=2023):
     url_base = URLS.get(tipo.lower())
