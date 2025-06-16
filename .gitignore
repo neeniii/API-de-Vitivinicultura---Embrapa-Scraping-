@@ -168,3 +168,6 @@ poesia.toml
 
 # Arquivos de configuração LSP
 pyrightconfig.json
+
+#arquivo vercel
+*.vercel.json
