@@ -58,7 +58,7 @@ def scraping(tipo: str, ano_inicio=1970, ano_fim=2023):
         print(f"Carregando dados do CSV local da aba {tipo}...")
 
         caminho_arquivo = os.path.join(CAMINHO_CSV, f"{tipo.lower()}.csv")
-        print(f"📂 Tentando carregar o CSV de: {caminho_arquivo}")
+        print(f"Tentando carregar o CSV de: {caminho_arquivo}")
         if os.path.exists(caminho_arquivo):
             try:
                 df = pd.read_csv(caminho_arquivo, sep=";", encoding="utf-8-sig")
