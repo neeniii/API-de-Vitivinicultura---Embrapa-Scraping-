@@ -98,6 +98,7 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
 - [NumPy](https://numpy.org/)
 - [Requests](https://docs.python-requests.org/)
+- [uvicorn](https://www.uvicorn.org/)
 - Autenticação via HTTP Basic
 '''
 
