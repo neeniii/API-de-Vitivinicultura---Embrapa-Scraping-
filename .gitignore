@@ -170,4 +170,4 @@ poesia.toml
 pyrightconfig.json
 
 #arquivo vercel
-*.vercel.json
+*vercel.json
