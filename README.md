@@ -10,12 +10,14 @@ API desenvolvida em FastAPI que realiza scraping dos dados do site da Embrapa da
 - Comercialização
 - Importação - Dados sobre (Vinhos de Mesa)
 - Exportação - Dados sobre (Vinhos de mesa)
+- previsão
 '''
 
 ## Funcionalidades
 '''
 - Raspagem direta via web scraping do site da Embrapa.
 - Fallback para CSV local em caso de erro no scraping.
+- Faz uma previsão básica usando regressão linear
 - Autenticação via HTTP Basic.
 - Documentação automática via Swagger e ReDoc.
 '''
@@ -36,16 +38,16 @@ A API utiliza autenticação HTTP Basic.
 
 ## Endpoints (pontos de entrada ou endereços da API) Disponíveis
 '''
-| Método | Endpoint              | Descrição                          | Autenticado |
-|--------|------------------------|-------------------------------------|--------------|
+| Método | Endpoint               | Descrição                          | Autenticado   |
+|--------|------------------------|------------------------------------|---------------|
 | GET    | `/`                    | Verifica se a API está online      | ❌           |
 | GET    | `/producao`            | Dados de produção                  | ✔️           |
 | GET    | `/processamento`       | Dados de processamento             | ✔️           |
 | GET    | `/comercializacao`     | Dados de comercialização           | ✔️           |
 | GET    | `/importacao`          | Dados de importação                | ✔️           |
 | GET    | `/exportacao`          | Dados de exportação                | ✔️           |
-'''
-## Instalação e Execução
+| GET    | `/previsao`            | Dados de exportação                | ✔️           |
+''''
 
 ### Pré-requisitos
 '''
@@ -83,13 +85,23 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 '''
 .
 ├── main.py                   # Arquivo principal da aplicação
+
 ├── scraper.py                # Lógica de scraping + fallback CSV
+
 ├── producao.py               # Endpoint: /producao
+
 ├── processamento.py          # Endpoint: /processamento
+
 ├── comercializacao.py        # Endpoint: /comercializacao
+
 ├── importacao.py             # Endpoint: /importacao
+
 ├── exportacao.py             # Endpoint: /exportacao
+
+├── previsao.py               # Endpoint: /previsao
+
 ├── /csv                      # (Opcional) CSVs locais para fallback
+
 └── README.md
 '''
 
@@ -102,6 +114,7 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 - [NumPy](https://numpy.org/)
 - [Requests](https://docs.python-requests.org/)
 - [uvicorn](https://www.uvicorn.org/)
+- [scikit-learn] (https://scikit-learn.org)
 - Autenticação via HTTP Basic
 '''
 
@@ -118,6 +131,7 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 '''
 - Migração da autenticação para JWT
 - Pegar informações dos outros filtros que tem na aba importação e exportação, nessas abas, estou trazendo as informações do filtro Vinhos de mesa.
+- Tratar melhor os dados.
 '''
 ---
 

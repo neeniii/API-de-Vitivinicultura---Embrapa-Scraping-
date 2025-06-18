@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 import pandas as pd
-from routers import producao, processamento, importacao, exportacao, comercializacao
+from routers import producao, processamento, importacao, exportacao, comercializacao, previsao
 
 app = FastAPI(title="API Produção Vitibrasil",
     description="API que faz scraping da embrapa",
@@ -13,6 +13,7 @@ app.include_router(processamento.router)
 app.include_router(importacao.router)
 app.include_router(exportacao.router)
 app.include_router(comercializacao.router)
+app.include_router(previsao.router)
 
 
 #Root - Verificar se está online
