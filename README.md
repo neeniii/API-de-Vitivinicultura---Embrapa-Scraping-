@@ -114,7 +114,7 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 - [NumPy](https://numpy.org/)
 - [Requests](https://docs.python-requests.org/)
 - [uvicorn](https://www.uvicorn.org/)
-- [scikit-learn] (https://scikit-learn.org)
+- [Scikit-learn](https://scikit-learn.org)
 - Autenticação via HTTP Basic
 '''
 
