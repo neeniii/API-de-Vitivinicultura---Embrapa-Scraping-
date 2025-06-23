@@ -22,7 +22,7 @@ URLS_CSV = {
 
 def prever_para_tipo(url_csv):
     try:
-        # Agora com separador ";" e encoding UTF-8
+        
         df = pd.read_csv(url_csv, sep=";", encoding='utf-8')
         df.replace([np.inf, -np.inf], None, inplace=True)
         df.fillna(0, inplace=True)
@@ -58,7 +58,7 @@ def prever_para_tipo(url_csv):
     
 # Banco de dados de usuários em memória para autenticação
 users = {
-    "fiap": "fiap1",  # Usuário 1
+    "fiap": "fiap1",  
     
 }
 
