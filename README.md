@@ -137,4 +137,4 @@ cd API-de-Vitivinicultura---Embrapa-Scraping-
 
 ## 👨‍💻 Autor
 
-Gabriel Pereira Ferreira
+Gabriel Pereira Ferreira.
