@@ -17,7 +17,7 @@ API desenvolvida em FastAPI que realiza scraping dos dados do site da Embrapa da
 '''
 - Raspagem direta via web scraping do site da Embrapa.
 - Fallback para CSV local em caso de erro no scraping.
-- Faz uma previsão básica usando regressão linear
+- Faz uma previsão básica usando regressão linear.
 - Autenticação via HTTP Basic.
 - Documentação automática via Swagger e ReDoc.
 '''
