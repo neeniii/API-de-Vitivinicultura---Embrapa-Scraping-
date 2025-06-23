@@ -51,7 +51,7 @@ def prever_para_tipo(url_csv):
         anos_futuros = pd.DataFrame({"Ano": list(range(2024, 2029))})
         previsoes = modelo.predict(anos_futuros)
 
-        return [{"ano": int(ano), "quantidade_prevista": float(q)} for ano, q in zip(anos_futuros["Ano"], previsoes)]
+        return [{"ano": int(ano), "quantidade_prevista": round(float(q),3)} for ano, q in zip(anos_futuros["Ano"], previsoes)]
 
     except Exception as e:
         return {"erro": str(e)}
